@@ -1,0 +1,139 @@
+html,body,ul,li,a{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.Nav{
+    width: 100%;
+    height: 44px;
+    background: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.img{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    left: 0;
+    top:44px;
+    overflow: hidden;
+}
+.img>img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+.active{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #4cae4c;
+}
+.mui-table-view{
+    position: absolute;
+    left: 0;
+    top: 44px;
+}
+.Home{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.v-enter{
+    transform: translateX(100%);
+}
+.v-enter-active{
+    transition: all 1s ease;
+}
+.v-enter-to{
+    transform: translateX(0);
+}
+.v-leave{
+    transform: translateX(0);
+}
+.v-leave-active{
+    transition: all 1s ease;
+}
+.v-leave-to{
+    transform: translateX(-100%);
+}
+
+.opacity-enter{
+    opacity: 0;
+}
+.opacity-enter-active{
+    transition: all .5s ease;
+}
+.opacity-enter-to{
+    opacity: 1;
+}
+.opacity-leave{
+    opacity: 1;
+}
+.opacity-leave-active{
+    transition: all .5s ease;
+}
+.opacity-leave-to{
+    opacity: 0;
+}
+.left{
+    width: 20vw;
+    height: 100%;
+    float: left;
+    padding-top: 44px;
+    border-right: 1px solid #000000;
+}
+.right{
+    width: 80vw;
+    height: 100%;
+    float: left;
+    padding-top: 44px;
+    overflow: scroll;
+    padding: 44px;
+}
+.product{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.Info{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.floor{
+    margin-bottom: 50px;
+    padding-top: 44px;
+}
+.login{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 10px;
+}
+.logout{
+    position: absolute;
+    bottom: -25px;
+    right: 6px;
+    color: red;
+    padding: 10px;
+}
