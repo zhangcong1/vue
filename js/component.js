@@ -42,7 +42,7 @@ var Nav = Vue.component("Nav",{
         },
         logout(){
             this.del("login");
-            router.go(-1)
+            router.push("/login")
         }
     }
 })
